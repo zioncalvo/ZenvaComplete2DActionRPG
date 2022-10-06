@@ -39,7 +39,7 @@ public class Inventory : MonoBehaviour
     public void AddItem(ItemData item)
     {
         ItemSlot slot = FindAvailableItemSlot(item);
-
+        Debug.Log("Current Slot Quantity: " + slot.Quantity);
         if(slot != null)
         {
             slot.Quantity++;
