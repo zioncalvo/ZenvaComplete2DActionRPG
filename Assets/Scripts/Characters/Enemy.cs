@@ -106,6 +106,7 @@ public abstract class Enemy : Character
 
     public override void Die()
     {
+        Debug.Log("Enemy Death");
         DropItems();
         Destroy(gameObject);
         

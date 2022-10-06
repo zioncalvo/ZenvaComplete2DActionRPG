@@ -29,6 +29,7 @@ public abstract class Character : MonoBehaviour, IDamagable
 
     public virtual void TakeDamage(int damageToTake)
     {
+        Debug.Log("Took " + damageToTake + " damage");
         CurHP -= damageToTake;
 
         audioSource.PlayOneShot(hitSFX);
