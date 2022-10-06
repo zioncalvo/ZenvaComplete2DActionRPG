@@ -14,6 +14,7 @@ public class Inventory : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("Fork");
         if(Instance != null && Instance != this)
             Destroy(gameObject);
         else
